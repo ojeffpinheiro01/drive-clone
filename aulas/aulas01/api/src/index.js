@@ -8,8 +8,8 @@ import Routes from './routes.js'
 const PORT = process.env.PORT || 3000
 
 const localHostSSL = {
-    key: fs.readFileSync('./certificates/key.pem'),    
-    cert: fs.readFileSync('./certificates/cert.pem')   
+    key: fs.readFileSync('./certificates/key.pem'),
+    cert: fs.readFileSync('./certificates/cert.pem')
 }
 
 const routes = new Routes()

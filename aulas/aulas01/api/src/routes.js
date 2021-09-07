@@ -1,8 +1,8 @@
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
-import { logger } from './logger'
-import FileHelper from './fileHelper'
+import { logger } from './logger.js'
+import FileHelper from './fileHelper.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const defaultDownloadsFolder = resolve(__dirname, '../', 'downloads')

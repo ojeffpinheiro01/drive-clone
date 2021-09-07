@@ -96,7 +96,8 @@ describe('#Routes test suite', () => {
             await routes.handler(...params.values())
 
             expect(params.res.writeHead).toHaveBeenCalledWith(200)
-            expect(params.res.end).toHaveBeenCalledWith(JSON.stringify(filesStatusesMock))
+            expect(params.res.end)
+                .toHaveBeenCalledWith(JSON.stringify(filesStatusesMock))
 
         })
     })
