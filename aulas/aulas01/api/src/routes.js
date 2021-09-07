@@ -9,7 +9,7 @@ export default class Routes {
   }
 
   async defaultRoute(_, res) {
-    res.end('Hellow World')
+    res.end('hello world')
   }
 
   async options(_, res) {
